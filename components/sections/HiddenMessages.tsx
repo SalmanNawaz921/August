@@ -1,10 +1,10 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, Variants } from "framer-motion";
 import { MESSAGES } from "@/lib/messages";
 
-const sectionVariants = {
+const sectionVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -12,7 +12,7 @@ const sectionVariants = {
   },
 };
 
-const cardVariant = {
+const cardVariant: Variants = {
   hidden: { opacity: 0, y: 35, scale: 0.96 },
   visible: {
     opacity: 1, y: 0, scale: 1,
@@ -20,7 +20,7 @@ const cardVariant = {
   },
 };
 
-const itemUp = {
+const itemUp: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: {
     opacity: 1, y: 0,
