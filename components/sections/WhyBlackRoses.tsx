@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, Variants } from "framer-motion";
 
 const SYMBOLS = [
   {
@@ -26,7 +26,7 @@ const SYMBOLS = [
   },
 ];
 
-const sectionVariants = {
+const sectionVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -34,7 +34,7 @@ const sectionVariants = {
   },
 };
 
-const itemUp = {
+const itemUp: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: {
     opacity: 1, y: 0,

@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, Variants } from "framer-motion";
 
 const MEMORIES = [
   {
@@ -30,7 +30,7 @@ const MEMORIES = [
   },
 ];
 
-const sectionVariants = {
+const sectionVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -38,7 +38,7 @@ const sectionVariants = {
   },
 };
 
-const cardVariant = {
+const cardVariant: Variants = {
   hidden: { opacity: 0, y: 30, rotateY: 4 },
   visible: {
     opacity: 1, y: 0, rotateY: 0,
@@ -46,7 +46,7 @@ const cardVariant = {
   },
 };
 
-const itemUp = {
+const itemUp: Variants = {
   hidden: { opacity: 0, y: 40 },
   visible: {
     opacity: 1, y: 0,
